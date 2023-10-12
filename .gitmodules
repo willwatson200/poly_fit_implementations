@@ -1,0 +1,6 @@
+[submodule "poly_fit/lib/eigen"]
+	path = poly_fit/lib/eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "poly_fit_cpp/lib/eigen"]
+	path = poly_fit_cpp/lib/eigen
+	url = https://gitlab.com/libeigen/eigen.git

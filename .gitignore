@@ -1,1 +1,10 @@
 .venv
+
+poly_fit_cpp/build
+
+data
+
+Python/__pycache__
+
+.vscode
+.clang-tidy
