@@ -3,12 +3,12 @@ import sys
 import os.path
 
 def generate_data(n_points, n_order, noise_factor):
-    xs = np.sort(5 * (2*np.random.rand(n_points) - 1))
-    coefficients = 10* (2*np.random.random(n_order+1) - 1)
+    xs = np.float64(np.sort(5 * (2*np.random.rand(n_points) - 1)))
+    coefficients = np.float64(10* (2*np.random.random(n_order+1) - 1))
 
     poly = np.poly1d(coefficients)
-    ys = poly(xs)
-    ys_noise = ys + noise_factor*np.random.randn(n_points)
+    ys = np.float64(poly(xs))
+    ys_noise = np.float64(ys + noise_factor*np.random.randn(n_points))
 
     with open(os.path.dirname(__file__) + '/../data/xs.npy', 'wb') as f:
         np.save(f, xs)

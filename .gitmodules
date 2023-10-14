@@ -4,3 +4,6 @@
 [submodule "poly_fit_cpp/lib/eigen"]
 	path = poly_fit_cpp/lib/eigen
 	url = https://gitlab.com/libeigen/eigen.git
+[submodule "poly_fit_cpp/lib/cnpy"]
+	path = poly_fit_cpp/lib/cnpy
+	url = https://github.com/rogersce/cnpy.git
