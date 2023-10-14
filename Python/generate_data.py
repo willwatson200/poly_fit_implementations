@@ -4,7 +4,7 @@ import os.path
 
 def generate_data(n_points, n_order, noise_factor):
     xs = np.float64(np.sort(5 * (2*np.random.rand(n_points) - 1)))
-    coefficients = np.float64(10* (2*np.random.random(n_order+1) - 1))
+    coefficients = np.float64(10* (2*np.random.rand(n_order+1) - 1))
 
     poly = np.poly1d(coefficients)
     ys = np.float64(poly(xs))
